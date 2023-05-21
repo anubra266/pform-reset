@@ -1,6 +1,6 @@
 {
   "name": "pform-reset",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "description": "Reset for form styles in panda.",
   "main": "dist/index.js",
