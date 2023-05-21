@@ -112,7 +112,7 @@ export const rules: Rule[] = [
     utility: ['form-select'],
     styles: {
       backgroundImage: `url("${svgToDataUri(
-        `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20"><path stroke=${inputSvgStroke}" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 8l4 4 4-4"/></svg>`,
+        `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20"><path stroke="${inputSvgStroke}" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 8l4 4 4-4"/></svg>`,
       )}")`,
       backgroundPosition: `right 0.5rem center`,
       backgroundRepeat: `no-repeat`,
