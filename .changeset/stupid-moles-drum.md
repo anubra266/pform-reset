@@ -2,4 +2,4 @@
 'pform-reset': patch
 ---
 
-First release
+Initial release
