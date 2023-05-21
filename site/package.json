@@ -1,0 +1,33 @@
+{
+  "name": "sandbox-vite",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "prepare": "panda",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "css": "PANDA_DEBUG=ast:* panda",
+    "css:gen": "PANDA_DEBUG=* panda codegen",
+    "css:dev": "PANDA_DEBUG=file:* panda --watch"
+  },
+  "dependencies": {
+    "@iconify-json/carbon": "^1.1.16",
+    "@iconify-json/fe": "^1.1.6",
+    "@iconify-json/ph": "^1.1.5",
+    "node-fetch": "^3.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@pandacss/dev": "dev",
+    "pform-reset": "workspace:*",
+    "@types/react": "18.2.6",
+    "@types/react-dom": "18.2.4",
+    "@vitejs/plugin-react": "4.0.0",
+    "postcss": "8.4.23",
+    "typescript": "5.0.4",
+    "vite": "4.3.5"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "pform-reset",
+  "version": "0.0.0",
+  "license": "MIT",
+  "description": "Reset for form styles in panda.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "author": "Abraham - anubra266 <anubra266@gmail.com>",
+  "scripts": {
+    "build": "tsup src/index.ts --format=cjs,esm --shims --dts",
+    "dev": "pnpm build --watch",
+    "test": "echo \"Error: no test specified\""
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "mini-svg-data-uri": "latest"
+  },
+  "devDependencies": {
+    "@pandacss/dev": "dev",
+    "@pandacss/types": "dev"
+  }
+}

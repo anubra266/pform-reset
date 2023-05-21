@@ -1,0 +1,11 @@
+dist
+node_modules
+coverage
+.next
+build
+*.hbs
+*.d.ts
+site/dist_site
+site/styled-system
+.github
+.changeset
