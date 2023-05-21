@@ -139,7 +139,7 @@ function App() {
 
 ### Strategy
 
-By default, this package genrates both global styles and utility styles for your project.
+By default, this package generates both global styles and utility styles for your project.
 
 Global styles ensures that all neccessary inputs are styled by default, while utility styles allow you to apply input
 styles individually,
