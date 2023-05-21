@@ -48,8 +48,6 @@ npm i -D pform-reset
 
 You can just add `pform-reset` to the `presets` key in your `panda.config.*` file.
 
-In your `panda.config.*` file, import `cssPicons` from `@css-picons/config`, then add it to presets
-
 ```ts
 export default defineConfig({
   presets: [
