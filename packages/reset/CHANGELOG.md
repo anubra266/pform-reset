@@ -1,5 +1,11 @@
 # pform-reset
 
+## 0.0.3
+
+### Patch Changes
+
+- 85e1e82: Style inputs without type
+
 ## 0.0.2
 
 ### Patch Changes
