@@ -7,6 +7,7 @@ export const rules: Rule[] = [
   {
     base: [
       "[type='text']",
+      "input:where(:not([type]))",
       "[type='email']",
       "[type='url']",
       "[type='password']",
