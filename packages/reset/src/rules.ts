@@ -7,7 +7,7 @@ export const rules: Rule[] = [
   {
     base: [
       "[type='text']",
-      "input:where(:not([type]))",
+      'input:where(:not([type]))',
       "[type='email']",
       "[type='url']",
       "[type='password']",
@@ -75,6 +75,28 @@ export const rules: Rule[] = [
     utility: ['form-input::-webkit-date-and-time-value'],
     styles: {
       minHeight: '1.5em',
+    },
+  },
+  {
+    // In Safari on iOS date and time inputs are centered instead of left-aligned and can't be
+    // changed with `text-align` utilities on the input by default. Resetting this to `inherit`
+    // makes them left-aligned by default and makes it possible to override the alignment with
+    // utility classes without using an arbitrary variant to target the pseudo-elements.
+    base: ['::-webkit-date-and-time-value'],
+    utility: ['form-input::-webkit-date-and-time-value'],
+    styles: {
+      'text-align': 'inherit',
+    },
+  },
+  {
+    // In Safari on macOS date time inputs that are set to `display: block` have unexpected
+    // extra bottom spacing. This can be corrected by setting the `::-webkit-datetime-edit`
+    // pseudo-element to `display: inline-flex`, instead of the browser default of
+    // `display: inline-block`.
+    base: ['::-webkit-datetime-edit'],
+    utility: ['form-input::-webkit-datetime-edit'],
+    styles: {
+      display: 'inline-flex',
     },
   },
   {
